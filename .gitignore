@@ -1,10 +1,6 @@
 #UserDefine
-/MDK-ARM/RM_Frame_C
 /cmake-build-debug
 /.idea
-RM_Frame_C.uvguix.*
-MDK-ARM/JLinkLog.txt
-
 
 # Prerequisites
 *.d
