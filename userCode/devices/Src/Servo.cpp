@@ -94,7 +94,6 @@ void Servo::Handle() {
                               htim1.Instance->ARR*duty);
 
     }else if(servoType == SPEED_360){
-
     }
 }
 
