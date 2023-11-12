@@ -23,16 +23,7 @@ MOTOR_INIT_t userMotorInit = {
 
 Motor UserMotor(MOTOR_ID_5,&userMotorInit);
 
-/*定义舵机ClawServo*/
-//SERVO_INIT_T Claw_Servo_Init ={
-//        .servoType = POSITION_180,    //舵机类型：180°舵机（舵机类型自行搜索）
-//        .servoID = SERVO_ID_2,		 //舵机ID：由SERVO_ID_1，接线如下图所示
-//        .firstAngle = 90,              //开机角度：舵机初次上电时转到的角度
-//        .angleLimit_Min = 0,          //最小角度：舵机可以转到的最小角度
-//        .angleLimit_Max = 180         //最大角度：舵机可以转到的最大角度
-//};
 
-//Servo ClawServo(&Claw_Servo_Init);
 
 /***
  * 在这里放入xxx.stop()即可使舵机,电机在遥控器急停挡位断电
