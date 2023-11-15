@@ -15,7 +15,10 @@ set(CMAKE_OBJDUMP arm-none-eabi-objdump)
 set(SIZE arm-none-eabi-size)
 
 SET(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F407IGHx_FLASH.ld
-        userCode/devices/Inc/BusServo.h)
+        userCode/devices/Inc/BusServo.h
+        userCode/devices/Inc/RoboticArm.h
+        userCode/devices/Src/RoboticArm.cpp
+        userCode/devices/Src/RoboticArm.cpp)
 
 #Uncomment for hardware floating point
 #SET(FPU_FLAGS "-mfloat-abi=hard -mfpu=fpv4-sp-d16")

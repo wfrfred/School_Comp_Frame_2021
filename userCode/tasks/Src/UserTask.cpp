@@ -2,6 +2,7 @@
 // Created by LEGION on 2021/10/4.
 //
 #include "UserTask.h"
+#include "RoboticArm.h"
 
 PID_Regulator_t userPidRegulator = {
         .kp = 60,
@@ -23,21 +24,21 @@ MOTOR_INIT_t userMotorInit = {
 
 Motor UserMotor(MOTOR_ID_5,&userMotorInit);
 
-
+RoboticArm roboticArm;
 
 /***
  * 在这里放入xxx.stop()即可使舵机,电机在遥控器急停挡位断电
  */
 void UserStop(){
     UserMotor.Stop();
-    //ClawServo.stop();
+    roboticArm.stop();
 }
 
 /***
  * 在这里写入初始化内容
  */
 void UserInit(){
-
+    roboticArm.init();
 }
 
 /***
@@ -45,5 +46,5 @@ void UserInit(){
  */
 void UserHandle(){
     UserMotor.Handle();
-    //ClawServo.Handle();
+    roboticArm.handle();
 }

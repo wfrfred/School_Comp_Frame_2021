@@ -12,7 +12,7 @@ class RoboticArm{
     uint32_t clawServoAngle{0};
     uint32_t targetAngles[5]{0};
 public:
-    explicit RoboticArm();
+    void init();
     void setTargetAngles(const float angles[5]);
     void setClawServo(uint8_t isOpen);
     void stop();

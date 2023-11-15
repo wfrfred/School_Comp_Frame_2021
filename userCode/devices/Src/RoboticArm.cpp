@@ -4,7 +4,7 @@
 
 #include "RoboticArm.h"
 
-RoboticArm::RoboticArm() {
+void RoboticArm::init(){
     memset(command, 0, sizeof(char) * 256);
     sprintf(command, "#255PMOD4!");
     HAL_UART_Transmit(&huart6, (uint8_t *) command, strlen(command), 1000);

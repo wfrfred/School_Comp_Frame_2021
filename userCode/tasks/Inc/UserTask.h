@@ -8,6 +8,7 @@
 #include "Device.h"
 #include "Servo.h"
 #include "Motor.h"
+#include "RoboticArm.h"
 /*枚举类型定义------------------------------------------------------------*/
 
 
@@ -18,6 +19,8 @@
 /*外部变量声明-------------------------------------------------------------*/
 
 extern Servo ClawServo,TurnLServo,TurnRServo,ShovelLServo,ShovelRServo;
+
+extern RoboticArm roboticArm;
 
 /*外部函数声明-------------------------------------------------------------*/
 
